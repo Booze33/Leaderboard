@@ -57,11 +57,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 💻 LeaderBoard <a name="vgs-presentation"></a>
-
-> Here you can see my presentation :
-- [N/A]()
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -75,7 +70,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-npm i
+npm install
 
 ### Setup
 
