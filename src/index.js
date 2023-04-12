@@ -48,7 +48,7 @@ const submitScore = async () => {
   const score = document.querySelector('.score').value;
 
   const nameRegex = /^[a-zA-Z\s]*$/;
-  if (!name || !nameRegex.test(name)) {
+  if (!name || !nameRegex.test(name)){
 
     return;
   }
@@ -61,12 +61,13 @@ const submitScore = async () => {
     },
     body: JSON.stringify({
       user: name,
-      score: score,
+      score,
       gameID: gameId,
     }),
   });
 
   const data = await response.json();
+  data.className = 'this';
 };
 
 const submit = document.getElementById('submit');
