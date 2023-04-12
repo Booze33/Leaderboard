@@ -48,9 +48,8 @@ const submitScore = async () => {
   const score = document.querySelector('.score').value;
 
   const nameRegex = /^[a-zA-Z\s]*$/;
-  if (!name || !nameRegex.test(name)){
-
-    return;
+  if (!name || !nameRegex.test(name)) {
+  return;
   }
 
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/1d1Kcgt6tjFXpA9MWYES/scores/', {
@@ -63,12 +62,13 @@ const submitScore = async () => {
       user: name,
       score,
       gameID: gameId,
-    }),
+  }),
   });
-
+  
   const data = await response.json();
   data.className = 'this';
 };
+
 
 const submit = document.getElementById('submit');
 submit.addEventListener('click', submitScore);
