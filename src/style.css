@@ -63,6 +63,13 @@ button {
   border-radius: 4px;
   color: #0541a9;
   box-shadow: 10px 5px 5px #000;
+  transition: all 2s;
+}
+
+button:hover {
+  color: #e1cdaf;
+  background-color: #0541a9;
+  box-shadow: 5px 5px 5px #000;
 }
 
 .input {
